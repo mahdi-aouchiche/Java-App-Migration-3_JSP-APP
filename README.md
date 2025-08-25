@@ -4,4 +4,4 @@ Author: Mahdi Aouchiche (https://github.com/mahdi-aouchiche/Java-App-Migration-3
 
 >Note: Login info to run the app: username = Admin, password = 123
 
-Migration Java-Servlet App to Java-Servlet-JSP App.
+Migration Java-Servlet App to Java-Servlet-JSP App
