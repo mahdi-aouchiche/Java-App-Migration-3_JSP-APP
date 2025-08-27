@@ -36,7 +36,8 @@ public class EmployeeDAO {
 					   "name AS 'Employee Name', " +
 					   "age AS 'Age', " +
 					   "salary AS 'Salary' " +
-				"FROM emp_dept LEFT JOIN employee ON eId = id;";
+				"FROM emp_dept LEFT JOIN employee ON eId = id " + 
+				"ORDER BY name;";
 			
 		try(Statement statement = this.connection.createStatement()) {
 			rs = statement.executeQuery(query);			
@@ -78,7 +79,8 @@ public class EmployeeDAO {
 							 " age AS 'Age'," +
 							 " salary AS 'Salary' " +
 						"FROM employee " +
-						"WHERE id NOT IN (SELECT eId FROM emp_dept);";
+						"WHERE id NOT IN (SELECT eId FROM emp_dept) " +
+						"ORDER BY name;";
 		
 		try(Statement statement = this.connection.createStatement()) {
 			rs = statement.executeQuery(query);			
