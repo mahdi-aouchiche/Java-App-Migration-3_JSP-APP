@@ -197,7 +197,8 @@ public class EmployeeDAO {
 						"WHERE employee.salary = (" +
 									"SELECT MAX(salary) " +
 									"FROM employee " +
-									"WHERE salary < (SELECT MAX(salary) FROM employee));";
+									"WHERE salary < (SELECT MAX(salary) FROM employee)) " +
+						"ORDER BY name ASC;";
 		try(Statement statement = this.connection.createStatement()) {
 			rs = statement.executeQuery(query);
 			ResultSetMetaData rsmd = rs.getMetaData();

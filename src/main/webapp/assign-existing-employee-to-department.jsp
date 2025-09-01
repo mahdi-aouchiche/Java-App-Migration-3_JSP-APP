@@ -2,8 +2,7 @@
     pageEncoding="UTF-8"%>
   
 <%@ page import="java.util.List" %>  
-<%@ page import="com.demo.model.Employee,
-				 com.demo.model.Department" %>
+<%@ page import="com.demo.model.Employee,com.demo.model.Department" %>
 				 
 <!DOCTYPE html>
 <html>
